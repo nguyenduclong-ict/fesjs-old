@@ -1,0 +1,23 @@
+{
+  "name": "fests",
+  "version": "0.0.1",
+  "description": "Fests for usage",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/nguyenduclong-ict/fests.git"
+  },
+  "keywords": [
+    "fests",
+    "express"
+  ],
+  "author": "Nguyen Duc Long",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nguyenduclong-ict/fests/issues"
+  },
+  "homepage": "https://github.com/nguyenduclong-ict/fests#readme"
+}
