@@ -1,5 +1,5 @@
 import { Model, Document } from 'mongoose';
-import { GetOneFunction, GetManyFunction, CreateManyFunction, UpdateOneFunction, UpdateManyFunction, DeleteOneFunction, DeleteManyFunction, CreateOneFunction } from './mogoose.declare';
+import { GetOneFunction, GetManyFunction, CreateManyFunction, UpdateOneFunction, UpdateManyFunction, DeleteOneFunction, DeleteManyFunction, CreateOneFunction } from './declare';
 export declare class Provider {
     model: Model<Document, {}>;
     constructor(model: Model<Document, {}>);

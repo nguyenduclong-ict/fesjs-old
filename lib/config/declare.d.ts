@@ -1,15 +1,14 @@
-declare class FesConfig {
-    static config: Config;
-    private constructor();
-    static setConfig(config: Config): void;
-    static get Config(): Config;
-}
-export interface Config {
+/// <reference types="node" />
+import { Express } from 'express';
+import { Server } from 'http';
+export interface IConfig {
     dirroot: string;
     env?: EnvConfig;
     database?: MongodbConfig[];
+    app?: Express;
+    server?: Server;
 }
-interface EnvConfig {
+export interface EnvConfig {
     PORT?: number;
     BCRYPT_SALT_ROUNDS?: number;
     JWT_SECRET?: string;
@@ -24,7 +23,5 @@ export interface MongodbConfig {
     port?: number | string;
     user?: string;
     pass?: string;
+    instance: any;
 }
-export declare const setConfig: typeof FesConfig.setConfig;
-export declare const Config: Config;
-export {};
