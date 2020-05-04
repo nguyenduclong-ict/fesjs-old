@@ -15,7 +15,7 @@ interface EnvConfig {
     JWT_SECRET?: string;
     UPLOAD_PATH?: string;
     NODE_ENV?: 'development' | 'production' | string;
-    [x: string]: string | number;
+    [x: string]: any;
 }
 export interface MongodbConfig {
     type: 'mongo';

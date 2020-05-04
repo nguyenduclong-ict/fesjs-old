@@ -1,23 +1,23 @@
 {
-  "name": "fests",
+  "name": "fesjs",
   "version": "0.0.1",
-  "description": "Fests for usage",
+  "description": "Simple setup for express server",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "publish": "npm version patch && git push origin master"
   },
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@github.com/nguyenduclong-ict/fests.git"
+    "url": "git+ssh://git@github.com/nguyenduclong-ict/fesjs.git"
   },
   "keywords": [
-    "fests",
+    "fesjs",
     "express"
   ],
   "author": "Nguyen Duc Long",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/nguyenduclong-ict/fests/issues"
+    "url": "https://github.com/nguyenduclong-ict/fesjs/issues"
   },
-  "homepage": "https://github.com/nguyenduclong-ict/fests#readme"
+  "homepage": "https://github.com/nguyenduclong-ict/fesjs#readme"
 }

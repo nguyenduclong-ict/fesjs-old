@@ -6,7 +6,7 @@ declare function start(): Promise<{
     app?: Express;
     server?: Server;
 }>;
-declare function beforeStart(f: (app: Express, server: Server, config?: Config) => Promise<void>): {
+declare function beforeStart(f: (Config?: Config, app?: Express, server?: Server) => Promise<void>): {
     start: typeof start;
 };
 export declare function FesServer(config: Config, app?: Express, server?: Server): {

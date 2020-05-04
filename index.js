@@ -40,7 +40,7 @@ function start() {
             const server = _server;
             // run hook beforeStart
             if (_beforeStart) {
-                yield _beforeStart(app, server, config);
+                yield _beforeStart(config, app, server);
             }
             // for dev
             app.use(morgan_1.default('dev'));
@@ -53,7 +53,7 @@ function start() {
             app.use(error_1.handleFesError);
             // start server
             const port = Number(process.env.PORT);
-            app.listen(port, () => {
+            server.listen(port, () => {
                 console.log('Server listen on port', port);
                 resolve({ app, server });
             });
