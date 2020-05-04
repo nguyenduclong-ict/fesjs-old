@@ -1,11 +1,9 @@
 {
   "name": "fesjs",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Simple setup for express server",
   "main": "index.js",
-  "scripts": {
-    "publish": "npm version patch && git push origin master"
-  },
+  "scripts": {},
   "repository": {
     "type": "git",
     "url": "git+ssh://git@github.com/nguyenduclong-ict/fesjs.git"
