@@ -20,8 +20,9 @@ export interface MongodbConfig {
     type: 'mongo';
     host: string;
     dbName: string;
+    authDb: string;
     port?: number | string;
     user?: string;
     pass?: string;
-    instance: any;
+    instance?: any;
 }
