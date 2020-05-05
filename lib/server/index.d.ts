@@ -1,5 +1,5 @@
 /// <reference types="node" />
-import { IConfig } from '@lib/config';
+import { IConfig } from '../config';
 import express, { Express } from 'express';
 import http, { Server } from 'http';
 declare function start(): Promise<{
