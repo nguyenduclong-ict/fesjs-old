@@ -1,4 +1,4 @@
-import { ConnectionOptions } from 'mongoose';
+import mongoose from 'mongoose';
 interface ConnectOptions {
     host: string;
     port: string | number;
@@ -6,7 +6,8 @@ interface ConnectOptions {
     user: string;
     pass: string;
     authDb?: string;
-    config: ConnectionOptions;
+    config: mongoose.ConnectionOptions;
 }
-export declare function connect(options: ConnectOptions): Promise<import("mongoose").Connection>;
+export declare function createConnection(options: ConnectOptions): Promise<mongoose.Connection>;
+export declare function connect(options: ConnectOptions): Promise<typeof mongoose>;
 export {};
