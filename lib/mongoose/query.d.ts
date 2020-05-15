@@ -1,5 +1,5 @@
-import { Model, Document } from 'mongoose';
-import { GetOneFunction, GetManyFunction, CreateManyFunction, UpdateOneFunction, UpdateManyFunction, DeleteOneFunction, DeleteManyFunction, CreateOneFunction } from './declare';
+import { Model, Document } from "mongoose";
+import { GetOneFunction, GetManyFunction, CreateManyFunction, UpdateOneFunction, UpdateManyFunction, DeleteOneFunction, DeleteManyFunction, CreateOneFunction, GetManyOptions } from "./declare";
 export declare class Provider {
     model: Model<Document, {}>;
     constructor(model: Model<Document, {}>);
@@ -22,12 +22,6 @@ export declare function getMany(model: Model<Document, {}>): (condition: any, op
         totalPage: number;
     };
 }>;
-interface GetManyOptions {
-    page?: number;
-    limit?: number;
-    populates?: string[];
-    pagination?: boolean;
-}
 export declare function updateOne(model: Model<Document, {}>): (condition: any, data: any, options?: any) => import("mongoose").DocumentQuery<Document, Document, {}>;
 export declare function updateMany(model: Model<Document, {}>): (condition: any, data: any, options?: any) => import("mongoose").Query<any>;
 export declare function createOne(model: Model<Document, {}>): (doc: any, mode?: "save" | "create") => Promise<Document>;
@@ -44,4 +38,3 @@ export declare function deleteMany(model: Model<Document, {}>): (condition: any)
 } & {
     deletedCount?: number;
 }>;
-export {};
